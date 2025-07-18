@@ -1,0 +1,44 @@
+/* Portfolio.css */
+
+/* Ensure all cards have a uniform height and width */
+.custom-card {
+    width: 100%;          /* Bootstrap's grid system controls the width */
+    height: 280px;        /* Set a fixed height for the card */
+    overflow: hidden;     /* Hide any overflowed content */
+    border-radius: 10px;  /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Add some shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Ensure card content aligns well */
+  }
+  
+  /* Ensure images fit inside the card without distortion */
+  .custom-img {
+    width: 100%;
+    height: 200px;         /* Fix image height */
+    object-fit: cover;     /* Ensures the image covers the area without distorting */
+    border-top-left-radius: 10px;   /* Match the border radius of the card */
+    border-top-right-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    text-align: center;
+    color: ghostwhite;
+  }
+  
+  /* Optional: If you want to add hover effects to the card */
+  .custom-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+   .heading{
+    color: var(--primary-color-dark);
+    font-weight: bold;
+    font-size:2.5rem;
+   }
+
+   .card-body {
+    background-size: contain;
+   }

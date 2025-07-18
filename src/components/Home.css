@@ -1,0 +1,106 @@
+/* Apply a full-page background image */
+.hero-page {
+    height: 100vh; 
+    width: 100%;
+    /* background-image: url('/image/kk.jpg'); Background image */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+  }
+  
+ 
+  .content-container {
+    padding: 40px;
+    text-align: center; 
+    max-width: 700px; 
+    margin: 0 20px; 
+  }
+  
+  /* Heading and paragraph styling */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .content-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .button-group {
+  display: flex;
+  gap: 16px; /* space between buttons */
+  margin-top: 20px;
+  justify-content: center;
+}
+
+  /* Call-to-action button */
+  .cta-button {
+    background-image: url(/public/image/logo/textureb.jpg);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: transparent;
+  }
+
+  .arrow {
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover .arrow {
+  transform: translateX(4px);
+}
+
+  .home-logo {
+    height: 80px; /* Adjust height as needed */
+    width: auto;
+  }
+
+  /* On smaller screens, avoid background cropping */
+@media (max-width: 768px) {
+  .hero-page {
+    background-image: url(/public/image/logo/bg-mobile.jpeg);
+    background-size: cover;      /* Show full image without cropping */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;   
+    /* height: 100vh; */
+  }
+
+  .content-container {
+    padding: 40px;
+    
+  }
+
+  .home-logo {
+    height: 60px;
+  }
+
+  .content-container p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center; 
+  }
+}

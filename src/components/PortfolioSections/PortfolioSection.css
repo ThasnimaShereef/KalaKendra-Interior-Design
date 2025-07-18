@@ -1,0 +1,134 @@
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-share.css');
+
+* {
+  box-sizing: border-box;
+}
+
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  top: 36px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.masonry-gallery-demo {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.grid-sizer {
+  width: 32%;
+  display: none;
+}
+
+.gallery-item {
+  width: 32%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 96%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Responsive: 2 columns on screens <= 768px */
+@media (max-width: 768px) {
+  .grid-sizer,
+  .gallery-item {
+    width: 50%;
+  }
+  .overlay-description,
+  .overlay-title {
+  font-size: small;
+}
+
+}
+
+/* Optional: 1 column on very small screens */
+@media (max-width: 480px) {
+  .grid-sizer,
+  .gallery-item {
+    width: 100%;
+  }
+  .overlay-description,
+  .overlay-title {
+  font-size: smaller;
+}
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-wrapper img {
+  width: 96%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark transparent layer */
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.overlay-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}

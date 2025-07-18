@@ -1,0 +1,68 @@
+/* src/components/AdminLogin.css */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-card {
+   /* background-color: var(--primary-color-dark); /*Make the card slightly transparent */
+    border-radius: 15px; /* Round the corners of the card */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .catchy-phrase {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555; /* Customize the color as needed */
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label {
+    margin-bottom: 5px;
+  }
+  
+  .rounded-input {
+    border-radius: 30px; /* Round the corners of the textboxes */
+     border: 1px solid #ccc; 
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color:rgba(255, 255, 255, 0.3);
+  }
+  
+  button {
+    border-radius: 30px; /* Round the corners of the button */
+    background-color: var(--primary-color-dark);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  /* src/components/AdminLogin.css */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
