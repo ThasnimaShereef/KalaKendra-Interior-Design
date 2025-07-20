@@ -103,7 +103,7 @@ function App() {
 
           {/* Home Route - Contains Sections */}
           <Route
-            path="/kalakendra"
+            path="/"
             element={
               <>
                 <section id="home">

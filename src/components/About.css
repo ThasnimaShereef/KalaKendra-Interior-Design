@@ -1,12 +1,10 @@
-/* src/components/About.css */
 .about-container {
   padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  /* background-color: #f9f9f9; */
 }
 
-.about-logo{
+.about-logo {
   padding: 11px;
   height: 68px;
 }
@@ -14,29 +12,25 @@
 /* Welcome Section */
 .welcome-section {
   display: flex;
-  /* flex-wrap: wrap; Allow wrapping for smaller screens */
   align-items: center;
   position: relative;
   margin-bottom: 5rem;
-  gap:30px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-.about-container h2{
+
+.about-container h2 {
   color: #fff;
   font-weight: bold;
-  margin-top:2rem;
- }
+  margin-top: 2rem;
+}
 
- /* .welcome-image {
-  flex-shrink: 0;
-  margin-right: -30px; /* Slight overlap effect 
-} */
-
+/* Welcome Video */
 .welcome-video {
   flex-shrink: 0;
-  /* margin-right: -30px; */
   position: relative;
-  width: 312px; /* Adjust width as needed */
-  height: auto; /* Adjust height as needed */
+  width: 100%;
+  max-width: 375px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -49,24 +43,17 @@
   border-radius: 8px;
 }
 
-/* .welcome-image img {
-  width: 375px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-} */
 .welcome-content {
   flex: 1;
 }
+
 .welcome-card {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-size: contain;
   z-index: 1;
-  position: relative;
-  color:var(--primary-color-dark);
+  color: var(--primary-color-dark);
 }
 
 .welcome-card h1 {
@@ -76,7 +63,7 @@
   font-weight: bolder;
 }
 
-/* Philosophy, Vision, Mission Section */
+/* PVM Section */
 .pvm-section {
   text-align: center;
   margin-top: 40px;
@@ -88,22 +75,19 @@
   margin-bottom: 30px;
 }
 
-/* Circles Container */
+/* Circles */
 .circles-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  position: relative;
   gap: 27px;
   margin-bottom: 5rem;
 }
 
-/* Individual Circle */
 .circle {
-  width: 290px;
-  height: 267px;
-  background-color: rgb(255, 255, 255);
+  width: 280px;
+  height: 260px;
+  background-color: #fff;
   color: #555;
   border-radius: 50%;
   display: flex;
@@ -111,9 +95,7 @@
   align-items: center;
   justify-content: center;
   padding: 15px;
-  position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  background-size: contain;
 }
 
 .circle h3 {
@@ -131,47 +113,47 @@
 
 /* Overlapping Effect */
 .circles-container .circle:nth-child(2) {
-  /* margin-top: 30px; Raise the center circle slightly */
   z-index: 1;
-} 
+}
 
 .circles-container .circle:nth-child(1) {
-  margin-right: -50px; /* Overlap left circle */
+  margin-right: -50px;
 }
 
 .circles-container .circle:nth-child(3) {
-  margin-left: -50px; /* Overlap right circle */
+  margin-left: -50px;
 }
 
 /* Process Section */
 .process-steps {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
 .process-step {
-  flex: 1 1 200px; /* Allows flex items to shrink on smaller screens */
+  flex: 1 1 200px;
   text-align: center;
   padding: 10px;
 }
 
 .process-icon {
   font-size: 50px;
-  color: var(--primary-color-dark); /* Icon color */
-  background-color: #fff; /* Circle background color */
+  color: var(--primary-color-dark);
+  background-color: #fff;
   padding: 10px;
   border-radius: 50%;
   margin-bottom: 10px;
   display: inline-block;
 }
+
 .process-step h3 {
   font-size: 18px;
   margin: 10px 0 5px;
   color: whitesmoke;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .process-step p {
@@ -179,17 +161,17 @@
   color: #fff;
 }
 
-/* Why Choose Us Section */
+/* Why Choose Us */
 .why-choose-us {
   display: flex;
   gap: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
 }
 
 .why-choose-us-text {
-  flex: 1;
-  padding-top:33px;
+  flex: 1 1 300px;
+  padding-top: 33px;
 }
 
 .why-choose-us-text h2 {
@@ -201,13 +183,12 @@
   font-size: 16px;
   color: #fff;
 }
+
 .why-cards {
-  /* flex: 1; */
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
-  max-width: 55%;
+  flex: 1 1 300px;
 }
 
 .why-card {
@@ -218,7 +199,6 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-size: contain;
 }
 
 .why-icon {
@@ -231,7 +211,7 @@
   font-size: 16px;
   color: #333;
   margin-bottom: 5px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .why-card p {
@@ -239,35 +219,34 @@
   color: #666;
 }
 
-
 /* Visionary Section */
 .visionary-section {
   display: flex;
-  align-items: stretch; /* Make columns equal height */
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 40px;
 }
 
 .about-image {
-  flex-basis: 50%;
-  
-  height: 100%; /* Ensures full height */
+  flex: 1 1 100%;
+  height: auto;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .about-image img {
-  width: 35%;
-  height: 43%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  display: block;
 }
 
 .visionary-content {
-  flex-basis: 50%; /* Take up remaining space */
+  flex: 1 1 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center the text vertically */
+  justify-content: center;
 }
 
 .visionary-content h2 {
@@ -282,76 +261,50 @@
   line-height: 1.6;
 }
 
+/* MEDIA QUERIES */
 
-/* Responsive Media Queries */
 @media (max-width: 992px) {
   .about-container {
     padding: 20px;
   }
 
-  .welcome-section {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .why-choose-us {
-    flex-direction: column;
-  }
-
-  .process-step,
-  .why-card {
-    flex-basis: 100%;
-  }
-
-  .why-choose-us-text {
-    text-align: center;
-    text-wrap-style: balance;
-  }
-
-  .welcome-video {
-    width: 100%;
-  }
-
   .why-cards {
-    /* grid-template-columns: 1fr; */
-    align-self:center;
-    max-width: max-content;
+    max-width: 100%;
+  }
+
+  .welcome-card h1 {
+    font-size: 24px;
   }
 }
 
 @media (max-width: 768px) {
-  .welcome-section,
-  .visionary-section {
-    gap: 15px;
-  }
-
-  .about-container h2 {
+  .visionary-content h2 {
     font-size: 1.5rem;
   }
-  /* .process-steps{
-    flex-wrap: wrap;
-  } */
 
-  .visionary-content h2 {
-    font-size: 1.8rem;
+  .visionary-content p {
+    font-size: 0.95rem;
+  }
+
+  .circle {
+    width: 240px;
+    height: 240px;
+    margin: 0 !important;
   }
 
   .process-icon {
     font-size: 40px;
   }
-  .circle {
-    /* width: 260px;
-    height: 260px; */
-    padding:25px;
-    margin-left:0 !important;
-    margin-right: 0 !important;
-  }
 
+  .welcome-card h1 {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 576px) {
-  .welcome-section {
-    flex-direction: column;
+  .circle {
+    width: 220px;
+    height: 220px;
   }
 
   .process-step h3,
@@ -364,19 +317,15 @@
     font-size: 0.9rem;
   }
 
-  .circle h3 {
-    font-size: 1rem;
+  .about-container h2 {
+    font-size: 1.4rem;
   }
 
   .visionary-content p {
     font-size: 0.9rem;
   }
-  
-  .circle {
-    width: 260px;
-    height: 260px;
-    padding:25px;
-    margin-left:0 !important;
-    margin-right: 0 !important;
+
+  .welcome-video {
+    max-width: 100%;
   }
 }

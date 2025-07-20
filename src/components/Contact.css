@@ -219,3 +219,51 @@ h1 {
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 15px;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact-buttons-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-button {
+    width: 100%; /* Full width on mobile */
+    padding: 12px;
+  }
+
+  .contact-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row label {
+    width: 100%;
+  }
+
+  .social-icons a {
+    font-size: 1.8rem;
+    margin: 0 10px;
+  }
+
+  .left-column, .right-column {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .location-section iframe {
+    height: 250px;
+  }
+}
